@@ -521,7 +521,18 @@ const QUIZ=[
       {q:"Quel parc a été retiré de la liste du patrimoine mondial en péril en 2021 ?",o:["La Salonga","Les Virunga","La Garamba","Kahuzi-Biega"],a:0,e:"Le parc national de la Salonga a été retiré de la liste en péril en juillet 2021."},
       {q:"Dans quel parc l'UNESCO a-t-elle appelé à sauver les derniers rhinocéros blancs du Nord ?",o:["Kahuzi-Biega","La Garamba","La Salonga","Les Virunga"],a:1,e:"Le parc national de la Garamba, dans le nord-est du pays."},
       {q:"En quelle année la RDC a-t-elle ratifié la Convention du patrimoine mondial ?",o:["1960","1965","1974","1990"],a:2,e:"La ratification date du 23 septembre 1974."},
-      {q:"Lequel de ces lieux est sur la liste indicative, c'est-à-dire proposé mais pas encore inscrit ?",o:["Le parc national de la Lomami","Les Virunga","La Garamba","La Salonga"],a:0,e:"Le parc national de la Lomami figure sur la liste indicative depuis 2024, comme les grottes de Dimba et Ngovo ou la dépression de l'Upemba."}]}
+      {q:"Lequel de ces lieux est sur la liste indicative, c'est-à-dire proposé mais pas encore inscrit ?",o:["Le parc national de la Lomami","Les Virunga","La Garamba","La Salonga"],a:0,e:"Le parc national de la Lomami figure sur la liste indicative depuis 2024, comme les grottes de Dimba et Ngovo ou la dépression de l'Upemba."}]},
+  {id:"qluntu",mono:"LUNTU",lvl:2,min:5,title:"Les Bakwa Luntu : mythe et tradition orale",sum:"Un peuple du Kasaï central, son ancêtre Mpongo Luntu et le récit de la termitière rouge.",
+    src:["Kabasele Dyckoba J.-R., L'origine mythologique des Bakwa Luntu, territoire de Dimbelenge, Ouagadougou, 2023 (Bibliothèque Sikuzani)","Kapena Ditholo J.-R., travail de fin d'études, 1973, cité dans le même document"],
+    qs:[
+      {q:"Dans quel territoire vivent les Bakwa Luntu ?",o:["Dimbelenge","Kabinda","Tshikapa","Kamina"],a:0,e:"Ils habitent le territoire de Dimbelenge, au Kasaï central."},
+      {q:"Selon la tradition, quel est l'ancêtre mythique des Bakwa Luntu ?",o:["Kalala Ilunga","Mpongo Luntu","Nkongolo","Ilunga Mbidi"],a:1,e:"Ils se reconnaissent un ancêtre lointain, Mpongo Luntu, dont seraient issues cinq branches."},
+      {q:"En combien de « bifuku » (lignages) se subdivisent ces cinq branches ?",o:["7","12","32","100"],a:2,e:"Selon les sources orales rapportées, les cinq branches se subdivisent en 32 bifuku."},
+      {q:"De quel lieu mythique, vers Kamina, se réclament les peuples de langue luba ?",o:["Mbanza Kongo","Nsanga Lubangu","Musumba","Nyangwe"],a:1,e:"Nsanga Lubangu, présenté comme le grand foyer de peuplement des familles de langue luba."},
+      {q:"D'après les sources citées, quand les Luntu arrivent-ils sur les terres de Dimbelenge ?",o:["Vers 1500","Entre 1750 et 1800","Vers 1885","Après 1960"],a:1,e:"Entre 1750 et 1800, d'après Mabika Kalanda cité par Jean-Claude Willame (1964)."},
+      {q:"Pourquoi, selon les traditions, le groupe Luntu aurait-il quitté l'empire luba ?",o:["Pour fuir les Portugais","À cause de conflits civils et de famines","Pour chercher de l'or","Après une inondation"],a:1,e:"Conflits civils et famines au Katanga ; le groupe serait arrivé au Kasaï au 17e siècle."},
+      {q:"Dans le récit « Luntu wa mu mutunda mukunze », où habite l'ancêtre ?",o:["Au bord du lac Munkamba","Dans une termitière rouge","Dans une grotte","Sur une île du fleuve"],a:1,e:"Mutunda signifie termitière et mukunze rouge : « l'humain qui habite la termitière rouge »."},
+      {q:"Dans la comptine des enfants luntu, que va acheter la mère chez les Bakwa Dishi ?",o:["Du sel et des perles","Une vache, un cheval et des outres d'huile","Des houes et des lances","Du manioc et du poisson"],a:1,e:"La chanson dit qu'elle est partie acheter une vache, un cheval et des outres d'huile (tulowalowa twa manyi)."}]}
 ];
 const NAMES=[["Amani","Swahili","Paix"],["Baraka","Swahili","Bénédiction"],["Bolingo","Lingala","Amour"],["Elikya","Lingala","Espoir"],["Esengo","Lingala","Joie"],["Furaha","Swahili","Joie, bonheur"],["Imani","Swahili","Foi"],["Neema","Swahili","Grâce"],["Nkembo","Lingala","Gloire"],["Tumaini","Swahili","Espoir"],["Zawadi","Swahili","Cadeau, don"]];
 const D="https://drive.google.com/file/d/";
@@ -745,6 +756,4 @@ updPts(); applyLang();
 let asked=false;try{asked=!!localStorage.getItem(KEY+"-asked")}catch(e){}
 loadBoard().finally(()=>{if(!P.av&&!asked)openPicker(true);else if(location.hash==="#profil")route();});
 </script>
-
-</body>
-</html>
+</body></html>
